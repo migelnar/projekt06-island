@@ -7,6 +7,19 @@
  Jedeme retro cernobile, dnes barvy nepotrebujeme.
 */
 
+p, h2 {
+    padding: 1rem;
+}
+
+p {
+    margin-top: 0;
+    padding-top: 0;
+}
+
+h2 {
+    font-family: 'Raleway', serif;
+}
+
 
 body {
     margin: 0;
@@ -15,14 +28,412 @@ body {
     font-family: 'Merriweather', serif;
     font-size: 16px;
     line-height: 1.6;
+    max-width: 500px;
+}
+
+h1 {
+    margin: 0;
 }
 
 
 /* HLAVICKA */
 
+
 .titulek {
     font-family: 'Raleway', serif;
 }
+
+.perex {
+    font-weight: 600;
+}
+
+.autor {
+    opacity: 80%;
+    font-style: italic;
+    position: relative;
+}
+
+.autor::before {
+    content:"";
+    border: white solid 1px;
+    display: block;
+    width: 20%;
+    margin: 20px 0 20px 0;
+    position: absolute;
+    bottom: 60%;
+    left: 40%;
+    right: 40%;
+}
+
+h2::after {
+    content:"";
+    border: lightblue solid 2px;
+    display: block;
+    position: relative;
+    width: 70px;
+    margin: 20px 0 0 0;
+    left: -20px;
+}
+
+.zahlavi {
+    background-image: url(images/island-hlavicka.jpg);
+    background-size: cover;    
+    text-align: center;
+    color: white;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    box-shadow: inset 0 0 0 1000px rgba(0,0,0,.2);
+}
+
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+
+img {
+    max-width: 500px;
+    width: 100%;
+    display: block;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    padding: 1rem;
+}
+
+nav li {
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    border-bottom: 1px solid lightgrey;
+
+}
+
+nav a {
+    display: block;
+    text-decoration: none;
+    color: grey;
+    text-transform: uppercase;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    font-family: 'Raleway', serif;
+
+}
+
+nav a:hover {
+    display: block;
+    text-decoration: none;
+    background-color: darkgrey;
+    text-transform: uppercase;
+
+}
+
+/* MENU */
+
+
+
+
+/* OBSAH */
+
+.popisek {
+    color: grey;
+    text-align: center;
+    font-weight: bold;
+    margin: 0px;
+    font-size: 12px;
+    padding: 6px;
+    font-weight: bold;
+}
+
+.popisek a {
+    /* text-decoration: none; */
+    color: grey;
+    /* margin: 0; */
+}
+
+.foto .popisek {
+    font-weight: bold;
+}
+
+.popisek-copy {
+    color: grey;
+    text-align: center;
+    margin: 0px;
+    font-size: 12px;
+    padding: 6px;
+}
+
+
+
+
+/* FOTOGALERIE */
+
+
+.telo {
+ 
+    border-bottom: grey;
+}
+
+
+/* PATICKA */
+
+.paticka {
+    padding-top: 50px;
+    background-color: white;
+    color: grey;
+    font-size: 11px;
+
+}
+
+.paticka a {
+    color: grey;
+    text-align: center;
+    margin: 0px;
+    font-size: 12px;
+    padding: 6px;
+    font-weight: bold;
+}
+
+/* tablet */
+@media (min-width: 500px) {
+
+    .titulek {
+        font-family: 'Raleway', serif;
+        font-size: 80px;
+    }
+
+    body {
+        margin: 0;
+        padding: 0;
+        background-color: #f5f5f5;
+        font-family: 'Merriweather', serif;
+        font-size: 16px;
+        line-height: 1.6;
+        max-width: 999px;
+    }
+
+    img {
+        max-width: 999px;
+        width: 100%;
+        display: block;
+    }
+    
+    nav {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        padding: 1rem;
+        margin-bottom: 30px;
+    }
+    
+    nav li {
+        display: inline-block;
+        text-decoration: none;
+        text-align: center;
+        border: 1px solid lightgrey;
+        width: 20%;
+    
+    }
+    
+    nav a {
+        display: inline-block;
+        text-decoration: none;
+        color: grey;
+        text-transform: uppercase;
+        padding-top: 4px;
+        padding-bottom: 4px;
+        font-family: 'Raleway', serif;
+        font-size: 11px;
+
+    
+    }
+    
+    nav a:hover {
+        display: block;
+        text-decoration: none;
+        background-color: darkgrey;
+        text-transform: uppercase;
+    
+    }
+
+
+
+    .galerie .foto {
+        max-width: 50%;
+            flex: 1 1 50%;
+                /* display: inline-block; */
+        /* display: inline-block; */
+    }
+
+    .galerie {
+        display:flex;
+        flex-wrap: wrap;
+        max-width: 999px;
+
+    }
+    
+.galerie .popisek {
+    display: none;
+}
+
+}
+
+/* HLAVICKA */
+
+
+
+/* MENU */
+
+
+
+
+/* OBSAH */
+
+
+
+
+/* FOTOGALERIE */
+
+
+
+
+/* PATICKA */
+
+/* PC */
+@media (min-width: 1000px) {
+
+    .zahlavi {
+        background-image: url(images/island-hlavicka.jpg) no-repeat center center fixed;
+        background-size: cover;    
+        text-align: center;
+        color: white;
+        padding-top: 1em;
+        padding-bottom: 1em;
+        box-shadow: inset 0 0 0 1000px rgba(0,0,0,.2);
+        width: 100%;
+    }
+    
+
+    .titulek {
+        font-family: 'Raleway', serif;
+        font-size: 80px;
+    }
+
+    .pc {
+        padding-top: 20px;
+        display: flex;
+        align-items: flex-start;
+    } 
+
+    nav {
+        flex: 30%;
+
+    }
+    
+    .uvod {
+        /* max-width: 50%; */
+        flex: 1 1 60%;
+    }
+
+
+    body {
+        margin: 0;
+        padding: 0;
+        background-color: #f5f5f5;
+        font-family: 'Merriweather', serif;
+        font-size: 16px;
+        line-height: 1.6;
+        max-width: 90%;
+    }
+
+    img {
+        width: 100%;
+        display: block;
+    }
+    
+
+
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        padding: 1rem;
+        width: 250px;
+    }
+    
+    nav li {
+        display: block;
+        text-decoration: none;
+        text-align: left;
+        border-bottom: 1px solid lightgrey;
+        width: 200px;
+        border: none;
+        border-bottom: 1px solid grey;
+
+    
+    }
+    
+    nav a {
+        display: block;
+        text-decoration: none;
+        color: grey;
+        text-transform: uppercase;
+        padding-top: 8px;
+        padding-bottom: 8px;
+        font-family: 'Raleway', serif;
+        
+    
+    }
+    
+    nav a:hover {
+        display: block;
+        text-decoration: none;
+        background-color: darkgrey;
+        text-transform: uppercase;
+    
+    }
+
+
+
+    .galerie .foto {
+        max-width: 33.3%;
+            flex: 1 1 33.3%;
+                /* display: inline-block; */
+        /* display: inline-block; */
+    }
+
+    .galerie {
+        display:flex;
+        flex-wrap: wrap;
+        max-width: 999px;
+
+    }
+    
+.galerie .popisek {
+    display: none;
+}
+
+.telo {
+    border: 1px solid grey;
+    max-width: 90%;
+    margin: auto;  
+    transform: translateY(-40px)
+    backgro
+}
+
+}
+
+/* HLAVICKA */
+
 
 
 /* MENU */
